@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOFU · Gizlilik Politikası</title>
+  <meta name="description" content="TOFU iOS uygulamasının hangi bilgileri nasıl kullandığı.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <a class="brand" href="/">TOFU</a>
+    <h1>Gizlilik Politikası</h1>
+    <p class="updated">Son güncelleme: 30 Eylül 2026</p>
+
+    <div class="card">
+      <p><strong>Kısaca:</strong> Hesap açmak için verdiğin ad, soyad, e-posta ve şifre, hesap altyapımız Supabase'te saklanır. Yemek tercihlerin (beslenme şeklin, mutfak seviyen, süre, bütçe, kişi ve yemek sayısı), haftalık planın, evdekilerin, alışveriş listenin durumu ve plan geçmişin hem telefonunda hem de hesabına bağlı olarak Supabase'te saklanır. Yemediğin yiyecekler ve alerjilerin ile pişirme ilerlemen yalnızca telefonunda kalır; sunucularımıza gönderilmez. Hesabını uygulamanın içinden silebilirsin. Reklam, analitik veya takip aracı kullanmıyoruz. Şef aboneliği tamamen Apple üzerinden yürür.</p>
+    </div>
+
+    <h2>1. Sorumlu</h2>
+    <p>Bu politika, TOFU iOS uygulaması ("TOFU", "uygulama") için geçerlidir. Verilerinden sorumlu olan kişi uygulamanın geliştiricisi Bora Kurt'tur. Sorularını ve isteklerini bborakurtt@gmail.com adresine iletebilirsin.</p>
+
+    <h2>2. Hesap açarken verdiğin bilgiler</h2>
+    <p>Hesap oluştururken şunları girersin:</p>
+    <ul>
+      <li>Ad ve soyad</li>
+      <li>E-posta adresi</li>
+      <li>Şifre</li>
+    </ul>
+    <p>Bu bilgiler, kimlik doğrulama hizmeti sağlayıcımız <a href="https://supabase.com/privacy" rel="noopener">Supabase</a>'e gönderilir ve orada saklanır. Şifren Supabase tarafından şifrelenmiş (hash'lenmiş) olarak tutulur; biz şifreni göremeyiz. Bu bilgileri yalnızca hesabını oluşturmak, giriş yapmanı sağlamak ve profilinde adını göstermek için kullanırız.</p>
+    <p>Giriş yaptıktan sonra oturumunu açık tutan anahtar, telefonunun güvenli Anahtar Zinciri'nde (Keychain) saklanır. Supabase, hizmeti çalıştırmak ve güvenliği sağlamak için giriş isteklerine ait teknik kayıtlar (örneğin IP adresi ve istek zamanı) tutabilir.</p>
+
+    <h2>3. Tercihlerin ve telefonunda kalan bilgiler</h2>
+    <p>Başlangıçta verdiğin ve sonra profilinden değiştirebildiğin yemek tercihlerinden şunlar hesabınla birlikte saklanır:</p>
+    <ul>
+      <li>Beslenme şeklin</li>
+      <li>Mutfak seviyen</li>
+      <li>Yemek süresi tercihin</li>
+      <li>Bütçe tercihin</li>
+      <li>Kişi sayısı ve haftalık yemek sayısı</li>
+    </ul>
+    <p>Giriş yaptığında bu tercihler iki yerde saklanır: telefonunda yerel bir kopya olarak ve hesabına bağlı olarak Supabase'te. Telefondaki kopya uygulamanın internet olmadan da çalışmasını sağlar; Supabase'teki kopya, başka bir telefondan giriş yaptığında soruların bu cevaplarla dolu gelmesini sağlar; orada cevaplarını onaylar ve yemediğin yiyecekleri yeniden seçersin. Bir tercihi değiştirdiğinde iki kopya da güncellenir. Supabase'teki tercihlerini yalnızca kendi hesabınla okuyup değiştirebilirsin. Hesap açmadan önce verdiğin cevaplar, hesap açana kadar yalnızca telefonunda kalır.</p>
+    <p>Giriş yaptığında şunlar da aynı şekilde iki yerde, telefonunda yerel bir kopya olarak ve hesabına bağlı olarak Supabase'te saklanır:</p>
+    <ul>
+      <li>Haftalık yemek planın (seçilen tarifler ve hangi gün pişecekleri)</li>
+      <li>Evde olduğunu işaretlediğin malzemeler (Tarifler'deki "Evinde neler var?" cevapların dahil)</li>
+      <li>Alışveriş listenin durumu (aldığın olarak işaretlediğin ürünler)</li>
+      <li>Plan geçmişin: hangi haftalar için plan yaptığın ve ne zaman (seri bundan hesaplanır)</li>
+    </ul>
+    <p>Uygulama her zaman telefonundaki kopyayı kullanır ve internet olmadan da çalışır; değişiklikler bağlantı olduğunda Supabase'e gönderilir. Aynı hesabı iki telefonda kullandığında en son yapılan değişiklik geçerli olur. Supabase'e gönderilen plan, yemediğin yiyecekler listeni içermez. Bu bilgileri Supabase'te yalnızca kendi hesabınla okuyup değiştirebilirsin.</p>
+    <p>Aşağıdakiler yalnızca telefonunda saklanır ve sunucularımıza gönderilmez:</p>
+    <ul>
+      <li>Yemediğin yiyecekler (alerjiler dahil)</li>
+      <li>Pişirme ilerlemen: hangi yemekleri pişirdiğin ve Rota'daki ilerlemen</li>
+      <li>Profil ayarların (seçtiğin karakter ve arka plan)</li>
+    </ul>
+    <p>Bu bilgiler telefonunda hesabınla ilişkilendirilir. Çıkış yaptığında bu telefonda kalır; tekrar giriş yaptığında geri gelir. Başka bir telefona aktarılmaz. Uygulamayı sildiğinde bu bilgiler de telefonundan kaldırılır.</p>
+    <p>Yemediğin yiyecekler (örneğin alerjiler) ve beslenme şeklin hassas bilgiler olabilir. Yemediğin yiyecekleri ve alerjilerini yalnızca telefonunda, sana uygun tarifleri seçmek için kullanırız; bunlar sunucularımıza gönderilmez. Beslenme şeklini de yalnızca tarifleri seçmek ve tercihlerini hesabınla birlikte saklamak için kullanırız. Bu bilgileri reklam, profilleme veya başka bir amaçla kullanmayız.</p>
+
+    <h2>4. Şef aboneliği</h2>
+    <p>Şef aboneliği Apple'ın uygulama içi satın alma sistemiyle satılır. Ödemeyi Apple alır; kart bilgilerin veya ödeme bilgilerin bize ulaşmaz. Uygulama, aboneliğinin etkin olup olmadığını telefonunda Apple'dan öğrenir. Abonelik kayıtları Apple kimliğine bağlıdır ve <a href="https://www.apple.com/tr/legal/privacy/" rel="noopener">Apple Gizlilik Politikası</a>'na tabidir.</p>
+
+    <h2>5. Kullanmadıklarımız</h2>
+    <ul>
+      <li>Reklam göstermiyoruz ve reklam amaçlı veri toplamıyoruz.</li>
+      <li>Analitik, kullanım takibi veya çökme raporlama aracı kullanmıyoruz.</li>
+      <li>Seni başka uygulamalar veya web siteleri üzerinden takip etmiyoruz.</li>
+      <li>Konumuna, kişilerine, fotoğraflarına, kamerana veya mikrofonuna erişmiyoruz.</li>
+      <li>Bildirim göndermiyoruz.</li>
+      <li>Verilerini satmıyoruz.</li>
+    </ul>
+
+    <h2>6. Kimlerle paylaşılır</h2>
+    <p>Hesap bilgilerin, yemek tercihlerin, haftalık planın, evdekilerin, alışveriş listenin durumu ve plan geçmişin yalnızca hesap altyapımızı sağlayan Supabase tarafından, bizim adımıza işlenir. Abonelik işlemleri Apple tarafından yürütülür. Bunların dışında verilerini kimseyle paylaşmayız; yasal bir zorunluluk olursa yalnızca gerekli olanı paylaşırız. Supabase'in sunucuları Türkiye dışında bulunabilir; bu durumda Supabase'te saklanan bu bilgiler yurt dışında saklanır.</p>
+
+    <h2>7. Ne kadar süre saklanır</h2>
+    <p>Hesap bilgilerin ve Supabase'teki yemek tercihlerin, haftalık planın, evdekilerin, alışveriş listenin durumu ve plan geçmişin hesabın var olduğu sürece saklanır; hesabın silindiğinde bunların hepsi de silinir. Telefonundaki bilgiler, uygulamayı silene kadar telefonunda kalır.</p>
+
+    <h2>8. Hakların ve hesabını silmek</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 11. maddesi ve geçerli olan diğer veri koruma mevzuatı kapsamında, hakkında hangi bilgileri tuttuğumuzu öğrenmeyi, düzeltilmesini veya silinmesini isteyebilirsin.</p>
+    <p>Hesabını uygulamanın içinden silebilirsin: Profil &gt; Hesap &gt; "Hesabı sil". Açılan sayfada nelerin silineceği yazar; silme, "Hesabımın ve verilerimin kalıcı olarak silineceğini anlıyorum" seçeneğini işaretleyip onayladığında gerçekleşir. Onayladığında:</p>
+    <ul>
+      <li>Supabase'teki hesabın (ad, soyad, e-posta ve şifre) ve hesabına bağlı yemek tercihlerin, haftalık planın, evdekilerin, alışveriş listenin durumu ve plan geçmişin hemen ve kalıcı olarak silinir.</li>
+      <li>Bu telefonda hesabınla ilişkili bilgiler (tercihlerin, yemediğin yiyecekler, planın, evdekilerin, alışveriş listen ve pişirme geçmişin) silinir ve giriş ekranına dönülür.</li>
+      <li>Silme geri alınamaz; aynı e-posta adresiyle yeni bir hesap açabilirsin ama eski bilgilerin geri gelmez.</li>
+    </ul>
+    <p>Silme tamamlanamazsa (örneğin internet bağlantısı yoksa) hiçbir şey silinmez ve uygulama sebebini gösterir; daha sonra tekrar deneyebilirsin. Hesabını başka telefonlarda da kullandıysan, o telefonlarda kalan bilgiler uygulamayı oralardan sildiğinde kaldırılır. Hesabını silmek Şef aboneliğini iptal etmez; aboneliğini iPhone Ayarlar'dan yönetebilir veya iptal edebilirsin.</p>
+    <p>Uygulamaya erişemiyorsan, hesabına kayıtlı e-posta adresinden bborakurtt@gmail.com adresine yazarak da hesabının silinmesini isteyebilirsin. İsteğini en geç 30 gün içinde sonuçlandırırız.</p>
+
+    <h2>9. Çocuklar</h2>
+    <p>TOFU çocuklara yönelik değildir ve bilerek çocuklardan kişisel veri toplamaz.</p>
+
+    <h2>10. Değişiklikler</h2>
+    <p>Uygulamanın veri kullanımı değişirse (örneğin bilgilerin bir gün sunucuya yedeklenmeye başlarsa), bu politikayı değişiklikten önce güncelleriz ve güncelleme tarihini bu sayfada gösteririz.</p>
+
+    <h2>11. İletişim</h2>
+    <p>Bora Kurt · bborakurtt@gmail.com</p>
+
+    <footer>
+      <a href="/terms">Kullanım Koşulları</a>
+      <a href="/">TOFU</a>
+    </footer>
+  </main>
+</body>
+</html>
