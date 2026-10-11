@@ -25,11 +25,14 @@ shopping state (`weekly_plans`) and planning history (`planning_history`), all a
 progress, nutrition settings, goal and consumption log stay on the phone; Şef paid through Apple and managed by
 RevenueCat (US): the TOFU user ID (no name or e-mail), purchase records and its SDK's technical data (IDFV, IP),
 for validating, linking and restoring the subscription and RevenueCat's subscription statistics; purchase and
-restore need an account, and a restore asks before moving Şef from another TOFU account; in-app account deletion
+restore need an account, and a restore asks before moving Şef from another TOFU account: only "Bu hesaba taşı" moves
+it, through the app repo's `move-sef` Edge Function, which receives the App Store signed transaction for verification
+only (not stored; its log keeps the user ID, result and environment), and RevenueCat's restore behavior "Transfer if
+there are no active subscriptions" keeps automatic syncs from moving an active subscription; in-app account deletion
 (Profil > Hesap > "Hesabı sil") asks RevenueCat to delete the customer first, then deletes the Supabase user, and
 never cancels the Apple subscription; no ads, tracking, IDFA, usage analytics or crash reporting. The source of
 truth is the app repo's `docs/AUTH_BACKEND.md` and `Tofu/PrivacyInfo.xcprivacy`. Update these pages before the app
 starts doing anything new with data (for example market features or a new service provider).
 
-Not verified, so the pages don't promise it: whether RevenueCat's automatic syncs (renewals) can move Şef between
-two TOFU accounts on one Apple ID without the consent question (terms § 7 says it may happen).
+Not verified on a device yet, so the pages state it as how the service is set up, not as a guarantee: renewals while
+another TOFU account is signed in leave Şef where it is (terms § 7).
